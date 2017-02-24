@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "YouTube Video Count",
+  "version": "0.1.0",
+  "description": "Add video count on watch page",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [{
+    "js": ["vidcount.js"],
+    "matches": ["https://youtube.com/*", "https://www.youtube.com/*"]
+  }],
+  "web_accessible_resources": ["script.js"],
+  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  }
+}

@@ -1,0 +1,5 @@
+chrome.runtime.sendMessage({apikey: true}, function(response) {
+	var	f = document.createElement('script');
+	f.innerHTML = 'function ytvidcount(){if("/watch"!==window.location.pathname)return!1;var e=document.createElement("a"),t=document.querySelector("meta[itemprop=channelId]").getAttribute("content"),n=document.querySelector("a.yt-user-photo").href,o=new XMLHttpRequest;e.style="color:#999;display:inline-block;font-size:11px;margin-top:1px;",e.className="yt-channel-video-count spf-link",e.href=n+"/videos",document.querySelector(".yt-user-info").append(e),o.onreadystatechange=function(){if(o.readyState==XMLHttpRequest.DONE){var t=JSON.parse(o.responseText);e.innerHTML="&middot; "+t.items[0].statistics.videoCount+" videos"}},o.open("GET","https://content.googleapis.com/youtube/v3/channels?id="+t+"&part=statistics&key=+'+response.apikey+'",!0),o.send()}ytvidcount(),window.addEventListener("spfdone",ytvidcount);'
+	document.body.appendChild(f);
+ });
