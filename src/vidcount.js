@@ -42,5 +42,7 @@ function ytvidcount() {
 ytvidcount();
 
 
-//YouTube uses SPF (spfjs - github.com/youtube/spfjs) which is their own HTML5 History API library that reloads only the changing parts of a webpage, because of the way our payload works it must be called everytime any change of location happens - a spf reload
+//YouTube uses SPF (spfjs - github.com/youtube/spfjs) which is their own HTML5 History API library
+//it reloads only the changed parts of a website
+//because of the way our payload works it must be called everytime any change of location happens - a spf reload
 window.addEventListener("spfdone", ytvidcount);
