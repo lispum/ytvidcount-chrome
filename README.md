@@ -1,7 +1,7 @@
 # Video Counter for YouTube
 Show author's video count with a direct link to all videos on the YouTube watch page. Without having to hover over the name.
 
-![What does YouTube Video Counter do on the watch page](https://cloud.githubusercontent.com/assets/25948390/23295641/fa4776f2-fa71-11e6-9fc5-5e8f04b835f5.png)
+![What does YouTube Video Counter do on the watch page](https://cloud.githubusercontent.com/assets/25948390/23295691/40e15fe2-fa72-11e6-94b6-c25203028dd1.png)
 
 ## Installing
 On your own responsibility.
